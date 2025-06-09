@@ -15,7 +15,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node listen.js"
   },
   "repository": {
     "type": "git",
