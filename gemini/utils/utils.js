@@ -6,7 +6,7 @@ const stringGenerator = (input) => {
                     - One quick and easy recipe,
                     - One moderately difficult recipe,
                     - One advanced recipe requiring more time or skill.
-                    `;
+                    I have ${input.cookTime} to cook.`;
   const formattingInstructions = `
                     Respond only with raw JSON in exactly the following format:
                     {
