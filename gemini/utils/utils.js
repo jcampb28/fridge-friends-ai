@@ -5,9 +5,10 @@ const stringGenerator = (input) => {
                     )}, return exactly three recipes, making sure all of the recipes are proper meals, based on recipes from top chefs and restaurants:
                     - One quick and easy recipe,
                     - One moderately difficult recipe,
-                    - One advanced recipe requiring more time or skill. 
+                    - One advanced, gourmet recipe requiring more time or skill. 
                     Ingredients can be reused. Do not give dessert recipies.
-                    I have ${input.cookTime} to cook; please ensure you stick to this time`;
+                    I have ${input.cookTime} to cook; please ensure you stick to this time.
+                    Make sure the method is thorough.`                    ;
   const formattingInstructions = `
                     Respond only with raw JSON in exactly the following format:
                     {
