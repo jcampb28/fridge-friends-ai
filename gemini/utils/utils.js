@@ -6,7 +6,8 @@ const stringGenerator = (input) => {
                     - One quick and easy recipe,
                     - One moderately difficult recipe,
                     - One advanced recipe requiring more time or skill.
-                    I have ${input.cookTime} to cook.`;
+                    Ingredients can be reused. Do not give dessert recipies.
+                    I have ${input.cookTime} to cook; please ensure you stick to this time`;
   const formattingInstructions = `
                     Respond only with raw JSON in exactly the following format:
                     {
@@ -50,6 +51,7 @@ const stringGenerator = (input) => {
     return inputString;
   } else {
     inputString = inputString + formattingInstructions;
+    console.log(inputString)
     return inputString;
   }
 };

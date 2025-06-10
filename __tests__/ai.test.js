@@ -62,12 +62,14 @@ describe.only("POST recipe instructions", () => {
   test.only("accepts input with only ingredients", () => {
     const input = {
       ingredients: data,
+      cookTime: "< 15 min"
     };
     return request(app)
       .post("/api/generate-recipe")
       .send(input)
       .expect(200)
       .then((response) => {
+        console.log(response.text)
         expect(response.text).not.toBe(null);
       });
   }, 15000);
