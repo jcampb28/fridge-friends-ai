@@ -2,7 +2,7 @@
   "GET /api": {
     "description": "serves up a json representation of all the available endpoints of the api"
   },
-  "POST /api/generate-recipies": {
+  "POST /api/generate-recipe": {
     "description": "takes up to three properties on an input object (ingredients (array; required), allergies (string) and dietaryRequirements (string)) and returns three recipies of varying difficulty",
     "example input": {
       "ingredients": [

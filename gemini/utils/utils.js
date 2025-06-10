@@ -22,6 +22,7 @@ const stringGenerator = (input) => {
                             }
                             }
                         ],
+                        "cookingTime": "string",
                         “method”: [“step 1”, “step 2", “...“]
                         }
                     ]
