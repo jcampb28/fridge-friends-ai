@@ -34,13 +34,13 @@ const stringGenerator = (input) => {
   if (input.allergies && !input.dietaryRequirements) {
     inputString =
       inputString +
-      ` Do not include any of these ingredients: ${input.allergies}.` +
+      ` Do not include any ingredients containing the following allergens: ${input.allergies}.` +
       formattingInstructions;
     return inputString;
   } else if (input.allergies && input.dietaryRequirements) {
     inputString =
       inputString +
-      ` Do not include any of these ingredients: ${input.allergies}.
+      ` Do not include any ingredients containing the following allergens: ${input.allergies}.
         Take these dietary requirements into account: ${input.dietaryRequirements}.` +
       formattingInstructions;
     return inputString;
