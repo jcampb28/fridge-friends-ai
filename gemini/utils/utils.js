@@ -1,12 +1,12 @@
 const stringGenerator = (input) => {
   let inputString = `You are a helpful recipe API.
-                    Using only these available ingredients: ${input.ingredients.join(
+                    ${input.onlyInventory}: ${input.ingredients.join(
                       ", "
                     )}, return exactly three recipes, making sure all of the recipes are proper meals, based on recipes from top chefs and restaurants:
                     - One quick and easy recipe,
                     - One moderately difficult recipe,
                     - One advanced, gourmet recipe requiring more time or skill. 
-                    Ingredients can be reused. Do not give dessert recipies.
+                    Ingredients can be reused. Do not give dessert recipes.
                     I have ${input.cookTime} to cook; please ensure you stick to this time.
                     Make sure the method is thorough.`                    ;
   const formattingInstructions = `
