@@ -5,10 +5,10 @@ const stringGenerator = (input) => {
                     )}, return exactly three recipes, making sure all of the recipes are proper meals, based on recipes from top chefs and restaurants:
                     - One quick and easy recipe,
                     - One moderately difficult recipe,
-                    - One advanced, gourmet recipe requiring more time or skill. 
+                    - One advanced, gourmet recipe requiring more skill. 
                     Ingredients can be reused. Do not give dessert recipes.
                     I have ${input.cookTime} to cook; please ensure you stick to this time.
-                    Make sure the method is thorough.`                    ;
+                    Make sure the method is thorough and foolproof.`;
   const formattingInstructions = `
                     Respond only with raw JSON in exactly the following format:
                     {
@@ -41,13 +41,13 @@ const stringGenerator = (input) => {
     inputString =
       inputString +
       ` Do not include any ingredients containing the following allergens: ${input.allergies}.
-        Take these dietary requirements into account: ${input.dietaryRequirements}.` +
+        The recipe should be suitable for someone with these dietary requirements: ${input.dietaryRequirements}.` +
       formattingInstructions;
     return inputString;
   } else if (input.dietaryRequirements && !input.allergies) {
     inputString =
       inputString +
-      `Take these dietary requirements into account: ${input.dietaryRequirements}.` +
+      `The recipe should be suitable for someone with these dietary requirements: ${input.dietaryRequirements}.` +
       formattingInstructions;
     return inputString;
   } else {
