@@ -7,7 +7,7 @@ const stringGenerator = (input) => {
                     - One moderately difficult recipe,
                     - One advanced, gourmet recipe requiring more skill. 
                     Ingredients can be reused. Do not give dessert recipes.
-                    I have ${input.cookTime} to cook; please ensure you stick to this time.
+                    I have ${input.cookTime} to cook; the recipe must not take longer than this to cook.
                     Make sure the method is thorough and foolproof.`;
   const formattingInstructions = `
                     Respond only with raw JSON in exactly the following format:
